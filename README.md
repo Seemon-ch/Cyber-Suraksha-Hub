@@ -1,5 +1,4 @@
 # 🛡️ Kavach-AI
-
 > One platform to check phishing links, UPI fraud & data breaches, in Hindi and regional languages.
 
 ## Problem

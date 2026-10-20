@@ -9,9 +9,6 @@ Online fraud is rising fast, and most victims are everyday citizens, including e
 
 Kavach-AI is a unified cyber safety hub. Users paste a link, SMS, UPI ID or email into a single **"Check Anything"** box. The app picks the right detector, combines the signals in a **Risk Score Engine**, and returns a clear verdict:
 
-🟢 **Safe** · 🟡 **Suspicious** · 🔴 **Danger**, with reasons and alerts in the user's own language.
-
-
 ## Tech Stack
 
 - **Frontend:** React, Tailwind CSS, i18n for Hindi/regional languages

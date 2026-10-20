@@ -40,7 +40,7 @@ h2{font-size:24px;margin:0 0 10px}
 .h b{font-variant-numeric:tabular-nums}
 .gwrap{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:14px}
 svg text{fill:var(--mute);font:13px Mukta,sans-serif}
-footer{margin:44px auto 24px;max-width:880px;padding:0 20px;color:var(--mute);font-size:14px}
+
 @media(max-width:560px){#res{grid-template-columns:1fr;justify-items:start}}
 </style></head>
 <body>
@@ -63,7 +63,6 @@ footer{margin:44px auto 24px;max-width:880px;padding:0 20px;color:var(--mute);fo
  <section><h2 id="h1"></h2><div class="hist" id="hist"></div></section>
  <section><h2 id="h2"></h2><p class="sub" id="gs"></p><div class="gwrap"><svg id="g" viewBox="0 0 600 270" width="100%" style="min-width:520px"></svg></div></section>
 </main>
-<footer id="ft"></footer>
 <script>
 const T={en:{t1:"Is this safe?",t2:"Paste a link, SMS, UPI ID or email. Kavach checks it and explains the result in plain words.",ph:"Paste anything here…",go:"Check now",tryl:"Try:",v:{safe:"Looks safe",warn:"Be careful",bad:"Danger"},ty:{link:"Link",sms:"Message",upi:"UPI ID",email:"Email"},ad:{safe:"Looks fine, but never share your OTP or PIN with anyone.",warn:"Don’t enter any details. Confirm on the official app or website first.",bad:"Don’t click, pay or reply. Report it at cybercrime.gov.in or call 1930."},h1:"Your checks",h2:"Scam network",gs:"Reported scams that share a pattern are linked. Each new risky check joins a cluster.",empty:"Nothing checked yet. Paste something above.",cl:{kyc:"Fake bank KYC",refund:"Fake refund desk",other:"Other"},ft:"Demo build: checks run in your browser with simple rules and sample data. Real models plug in through the API. Report fraud: cybercrime.gov.in · 1930",
 r:{ip:"Uses a raw IP address instead of a name",tld:"Domain ending is common on scam sites",brand:"Uses a bank or UPI brand name on an unofficial domain",hyph:"Many hyphens, a common lookalike trick",http:"No secure connection (http)",kw:"Pressure words like verify, KYC or refund",at:"Contains @ to hide the real address",urg:"Creates urgency or threatens to block your account",otp:"Asks for OTP, PIN or password",prize:"Promises a prize or reward",kycm:"Mentions KYC, PAN or Aadhaar",upikw:"ID looks like a fake support or refund desk",num:"Random number string in the ID",rep:"Matches an entry already reported by users",breach:"Hash prefix {x} found in the demo breach list",cleanb:"Hash prefix {x} not in the demo breach list",clean:"No warning signs found"}},
@@ -116,7 +115,7 @@ function draw(){const L=T[lang];
   h+=`<text x="${cx}" y="248" text-anchor="middle">${L.cl[g]}</text>`});
  $("g").innerHTML=h}
 function ui(){const L=T[lang];document.documentElement.lang=lang;
- ["t1","t2","h1","h2","gs","ft"].forEach(k=>$(k).textContent=L[k]);
+ ["t1","t2","h1","h2","gs"].forEach(k=>$(k).textContent=L[k]);
  $("q").placeholder=L.ph;$("go").textContent=L.go;$("tryl").textContent=L.tryl;
  $("en").setAttribute("aria-pressed",lang==="en");$("hi").setAttribute("aria-pressed",lang==="hi");
  if(last)show(last);draw()}

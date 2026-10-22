@@ -1,4 +1,3 @@
-// English + Hindi text for the whole UI
 const T = {
   en: {
     t1: "Is this safe?",

@@ -11,7 +11,7 @@ Kavach-AI is a unified cyber safety hub. Users paste a link, SMS, UPI ID or emai
 
 ## Tech Stack
 
-- **Frontend:** React, Tailwind CSS, i18n for Hindi/regional languages
+- **Frontend:** HTML, CSS, JS, Tailwind CSS, i18n for Hindi/regional languages
 - **Backend:** Python, FastAPI
 - **ML:** scikit-learn (phishing + anomaly detection)
 - **Graph / DSA:** NetworkX, Bloom filter, hashing

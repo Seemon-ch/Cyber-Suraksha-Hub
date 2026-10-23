@@ -15,7 +15,7 @@ Kavach-AI is a unified cyber safety hub. Users paste a link, SMS, UPI ID or emai
 - **Backend:** Python, FastAPI
 - **ML:** scikit-learn (phishing + anomaly detection)
 - **Graph / DSA:** NetworkX, Bloom filter, hashing
-- **Database:** SQLite / PostgreSQL
+- **Database:** PostgreSQL
 
 
 

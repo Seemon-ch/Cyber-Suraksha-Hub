@@ -3,7 +3,7 @@
 
 ## Problem
 
-Online fraud is rising fast, and most victims are everyday citizens, including elderly and rural users. Existing tools are scattered: one app for phishing, another for breaches, none for UPI fraud, and almost none in regional languages. People don't need five apps. They need one place to ask: **"Is this safe?"**
+Online fraud is rising fast, and most victims are everyday citizens, including elderly and rural users. Existing tools are scattered: one app for phishing, another for breaches, none for UPI fraud, and almost none in regional languages. People don't need five apps. They need one place to ask:"Is this safe?"
 
 ## Solution
 
